@@ -1,0 +1,196 @@
+.hidden {
+    display: none;
+}
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    /* 원하는 폰트로 변경 */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    /* Flexbox 활성화 */
+    flex-direction: column;
+    /* 세로 방향 정렬 */
+    justify-content: center;
+    /* 수직 중앙 정렬 */
+    align-items: center;
+    /* 수평 중앙 정렬 */
+    height: 100%;
+    /* 전체 높이 사용 */
+    position: relative;
+    /* 자식 요소의 절대 위치를 사용할 수 있도록 설정 */
+}
+
+#weather {
+    display: flex;
+    /* Flexbox 활성화 */
+    flex-direction: column;
+    /* 세로 방향 정렬 */
+    justify-content: center;
+    /* 수직 중앙 정렬 */
+    position: absolute;
+    /* 절대 위치 설정 */
+    top: 10px;
+    /* 상단에서 약간 떨어진 위치 */
+    right: 10px;
+    /* 우측에서 약간 떨어진 위치 */
+    text-align: center;
+    /* 텍스트 중앙 정렬 */
+    color: white;
+    /* 텍스트 색상 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* 그림자 효과 */
+    font-size: 1.1em;
+    /* 글자 크기 설정 */
+    font-weight: bold;
+    /* 글자 굵기 설정 */
+}
+
+#clock {
+    display: flex;
+    /* Flexbox 활성화 */
+    font-size: 100px;
+    /* 글자 크기 설정 */
+    color: white;
+    /* 텍스트 색상 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* 그림자 효과 */
+    font-weight: bold;
+    /* 글자 굵기 설정 */
+    margin-top: -200px;
+    /* 위쪽으로 이동 (음수 값 사용) */
+    position: absolute;
+    /* 절대 위치 설정 */
+}
+
+#whatName,
+#writeToDo {
+    padding: 10px;
+    /* 내부 여백 */
+    font-size: 1.2em;
+    /* 글자 크기 */
+    border: 2px solid black;
+    /* 테두리 색상 */
+    border-radius: 5px;
+    /* 모서리 둥글게 */
+    outline: none;
+    /* 포커스 시 기본 테두리 제거 */
+    transition: border-color 0.3s;
+    /* 테두리 색상 전환 효과 */
+    width: 250px;
+    /* 너비 설정 */
+    margin-bottom: 10px;
+    /* 아래쪽 여백 */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 배경색 */
+}
+
+/* 제출 버튼 스타일 */
+#nameSubmit {
+    padding: 10px 20px;
+    /* 내부 여백 */
+    font-size: 1.2em;
+    /* 글자 크기 */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 배경색 */
+    color: black;
+    /* 글자 색상 */
+    border: 2px solid black;
+    /* 테두리 색상 */
+    border-radius: 5px;
+    /* 모서리 둥글게 */
+    transition: background-color 0.3s, transform 0.3s;
+    /* 전환 효과 */
+}
+
+/* 버튼 호버 효과 */
+#nameSubmit:hover {
+    background-color: rgba(0, 0, 0, 0.185);
+    /* 호버 시 배경색 변화 */
+    transform: translateY(-2px);
+    /* 위로 이동 효과 */
+}
+
+/* 버튼 클릭 시 효과 */
+#nameSubmit:active {
+    transform: translateY(1px);
+    /* 클릭 시 아래로 이동 효과 */
+}
+
+#writeToDo {
+    width: 353.02px;
+    /* 좌우 길이 늘리기 */
+}
+
+#quote {
+    display: flex;
+    /* Flexbox 활성화 */
+    flex-direction: column;
+    /* 세로 방향 정렬 */
+    justify-content: center;
+    /* 수직 중앙 정렬 */
+    position: absolute;
+    /* 절대 위치 설정 */
+    bottom: 10px;
+    /* 상단에서 약간 떨어진 위치 */
+    text-align: center;
+    /* 텍스트 중앙 정렬 */
+    color: white;
+    /* 텍스트 색상 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* 그림자 효과 */
+    font-size: 1.1em;
+    /* 글자 크기 설정 */
+    font-weight: bold;
+    /* 글자 굵기 설정 */
+}
+
+.textCustom {
+    color: white;
+    /* 텍스트 색상 */
+    font-weight: bold;
+    /* 글자 굵기 설정 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* 그림자 효과 */
+    font-size: 1.1em;
+    /* 글자 크기 설정 */
+}
+
+.buttonCustom {
+    border: 2px solid black;
+    /* 테두리 색상 */
+    border-radius: 5px;
+    /* 모서리 둥글게 */
+}
+
+.buttonCustom:hover {
+    background-color: rgba(0, 0, 0, 0.185);
+    /* 호버 시 배경색 변화 */
+    transform: translateY(-2px);
+    /* 위로 이동 효과 */
+}
+
+.greetingCustom {
+    color: white;
+    /* 텍스트 색상 */
+    font-weight: bold;
+    /* 글자 굵기 설정 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* 그림자 효과 */
+}
+
+.authorCustom {
+    color: white;
+    /* 텍스트 색상 */
+    font-weight: bold;
+    /* 글자 굵기 설정 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* 그림자 효과 */
+    font-size: 25px;
+    /* 글자 크기 설정 */
+}
